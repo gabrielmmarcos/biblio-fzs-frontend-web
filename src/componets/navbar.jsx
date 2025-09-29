@@ -12,21 +12,19 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 min-h-screen w-[230px] bg-neutral-900 flex flex-col items-center justify-evenly rounded-r-2xl">
-      {links.map((link, index) => (
-        <a
-          key={index}
-          href={link.href}
-          className="flex flex-col items-center text-white group"
-        >
-          <div className=" hover:text-red-500 cursor-pointer">{link.icon}</div>
-          {/* Texto escondido que aparece no hover */}
-          <span className="text-xl mt-2 text-white group-hover:text-red-500">
-            {link.text}
-          </span>
-        </a>
-      ))}
-    </div>
+  <div className="fixed top-0 left-0 min-h-screen w-[230px] bg-neutral-900 flex flex-col items-center justify-evenly rounded-r-2xl">
+  {links.map((link, index) => (
+    <a
+      key={index}
+      href={link.href}
+      className="flex flex-col items-center text-white group hover:text-red-500 cursor-pointer"
+    >
+      <div>{link.icon}</div>
+      <span className="text-xl mt-2">{link.text}</span>
+    </a>
+  ))}
+</div>
+
   );
 };
 
