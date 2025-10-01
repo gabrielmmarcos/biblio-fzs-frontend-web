@@ -4,11 +4,11 @@ import { User, BookOpen, Bookmark, UserPlus, Notebook } from "lucide-react";
 const Navbar = () => {
   // Lista para evitar repetição de código
   const links = [
-    { icon: <User size={45} />, text: "Funções bibliotecário", href: "/bibliotecario" },
-    { icon: <BookOpen size={45} />, text: "Empréstimos", href: "/emprestimos" },
-    { icon: <Bookmark size={45} />, text: "Reservas", href: "/reservas" },
-    { icon: <UserPlus size={45} />, text: "Adicionar aluno", href: "/aluno" },
-    { icon: <Notebook size={45} />, text: "Cadastrar acervo", href: "/acervo" },
+    { icon: <User size={45} />, text: "Funções bibliotecário", href: "/Bibliotecario" },
+    { icon: <BookOpen size={45} />, text: "Empréstimos", href: "/Emprestimo" },
+    { icon: <Bookmark size={45} />, text: "Reservas", href: "/Reserva" },
+    { icon: <UserPlus size={45} />, text: "Adicionar aluno", href: "/AddAluno" },
+    { icon: <Notebook size={45} />, text: "Cadastrar acervo", href: "/Acervo" },
   ];
 
   return (
