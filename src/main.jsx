@@ -8,15 +8,20 @@ import Bibliotecario from "./pages/Bibliotecario";
 import Login from "./pages/Login";
 import Emprestimo from "./pages/Emprestimo";
 import Acervo from "./pages/Acervo";
-import AddAluno from "./pages/AddAluno";
+import Alunos from "./pages/Alunos";
 import Relatorio from "./pages/Relatorio";
 import Reserva from "./pages/Reserva";
 import AddFuncionario from "./pages/AddFuncionario";
+import AddAluno from "./pages/AddAluno";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />, 
+    element: <Login />,
+  },
+  {
+    path: "/AddAluno",
+    element: <AddAluno />,
   },
   {
     path: "/home",
@@ -26,32 +31,32 @@ const router = createBrowserRouter([
     path: "/bibliotecario",
     element: <Bibliotecario />,
   },
-   {
+  {
     path: "/Acervo",
     element: <Acervo />,
   },
-   {
-    path: "/AddAluno",
-    element: <AddAluno />,
+  {
+    path: "/Alunos",
+    element: <Alunos />,
   },
   {
     path: "/AddFuncionario",
     element: <AddFuncionario />,
   },
 
-   {
+  {
     path: "/Emprestimo",
     element: <Emprestimo />,
   },
-   {
+  {
     path: "/Relatorio",
     element: <Relatorio />,
   },
-   {
+  {
     path: "/Reserva",
     element: <Reserva />,
   },
-  
+
 ]);
 
 createRoot(document.getElementById("root")).render(
